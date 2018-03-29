@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* page1 styles */
+
+body {
+	background-color: #F6EDD8;
+}
+
+#page1 {
+	height: 900px;
+}
+
+/* Landing image */
+.main-img {
+	padding-top: 60px;
+	display: block;
+    margin: 0 auto;
+    height: 451px;
+    width: 950px;
+}
+
+/* Logo Text effect code snippet by Ibrahim Jabbari -- www.ibrahimjabbari.com */
+
+.plate {
+  width: 450px;
+  margin: 30px auto;
+}
+.shadow {
+  color: #7B561B;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 #D8C8AA,
+    1px -1px 0 #D8C8AA,
+    -1px 1px 0 #D8C8AA,
+    1px 1px 0 #D8C8AA,
+    2px 2px 0 #D8C8AA,
+    3px 3px 0 #D8C8AA,
+    4px 4px 0 #D8C8AA,
+    5px 5px 0 #D8C8AA;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #F6EDD8;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #000;
+}
+.text3 {
+  font-size: 70px;
+}
+
+/* page2 styles*/
+
+#page2 {
+	height: 900px;
+	background-color: #CCB8A6;
+}
+
+
