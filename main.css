@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
-@import url('https://fonts.googleapis.com/css?family=Cabin:500');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400');
 
 /* reset */
 
@@ -10,13 +10,15 @@
 	border: 0;
 }
 
-/* page1 styles */
+
+
+/* landing styles */
 
 body {
 	background-color: #F6EDD8;
 }
 
-#page1 {
+#landing-pg {
 	height: 900px;
 }
 
@@ -26,6 +28,7 @@ nav {
 	padding-top: 20px;
 	text-align: center;
 	font-size: 25px;
+  font-family: "Cabin";
 }
 
 nav a {
@@ -111,46 +114,136 @@ nav a:hover {
   width: 100%;
   border-bottom: 3px solid #7B561B;
 }
+
 .text3 {
   font-size: 70px;
 }
 
-/* page2 styles*/
-
-#page2 {
-	height: 900px;
-	background-color: #CCB8A6;
-	color: #FDFDFF;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #FDFDFF;
+    margin: 50px 10% 0 10%;
+    padding: 0;
+    width: 80%;
 }
 
-#page2 img {
-	height: 400px;
-	width: 400px;
+/* menu-page styles*/
+
+#menu-pg {
+	height: 1400px;
+	background-color: #CCB8A6;
+	color: #FDFDFF;
+  font-family: "Cabin";
 }
 
 .left-img {
 	float: left;
-	padding-left: 200px;
-	padding-right: 300px;
-
+	padding-left: 10%;
+	padding-right: 500px;
+  height: 400px;
+  width: 400px;
 }
 
-.donut-menu {
-	padding-top: 30px;
+.donut-menu, .croissant-menu, .drinks-menu {
+	padding-top: 45px;
 	font-size: 20px;
 	line-height: 40px;
 }
 
+
 h2 {
 	font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.croissant-menu {
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.right-img {
+  float: right;
+  margin-right: 10%;
+  padding-right: 40px;
+  width: 450px;
+  height: 300px;
+}
+
+.drinks-menu img {
+  width: 500px;
+  height: 375px;
+  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 450px;
 }
 
 
-/* page3 styles */
+/* about-page styles */
 
-#page3 {
-	height: 900px;
-	background-color: #FEF9F7;
+#about-pg {
+	height: 1050px;
+	background-color: #F8F5E4;
+  font-family: "Cabin";
+  color: #5B504A;
 }
+
+#about-pg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about, .info {
+  width: 600px;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+.adress {
+  padding-top: 30px;
+}
+
+.info {
+  font-size: 15px;
+}
+
+/* top-button styles */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #162A3F; 
+    font-family: "Cabin";
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* footer styles */
+footer {
+  text-align: center;
+  padding-top: 50px;
+  color: #5B504A;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #5B504A;
+}
+
 
 

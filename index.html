@@ -3,17 +3,19 @@
 <head>
 	<title>Christy's Donuts</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <!-- Landing page -->
 
-<div id="page1">
+<div id="landing-pg">
+	<a id="home" class="smooth"></a>
 
 	<nav>
-		<a class="left-nav" href="">Home</a> <span class="bar">|</span>
-		<a class="mid-nav" href="">Menu</a> <span class="bar">|</span>
-		<a class="right-nav" href="">About</a> 
+		<a class="left-nav" href="#home">Home</a> <span class="bar">|</span>
+		<a class="mid-nav" href="#menu">Menu</a> <span class="bar">|</span>
+		<a class="right-nav" href="#about">About</a> 
 	</nav>
 
 	<img class="main-img" src="img/donuts.jpg">
@@ -29,30 +31,56 @@
 
 <!-- Menu page -->
 
-<div id="page2">
+<div id="menu-pg">
+	<a id="menu" class="smooth"></a>
 
-	<div>
-		<img class="left-img" src="img/pinkDonut.jpg">
+	<img class="left-img" src="img/pinkDonut.png">
 
-		<div class="donut-menu">
-			<h2>Donuts</h2>
-			<h3>Lorem ipsum</h3>
+	<div class="donut-menu">
+		<h2>Donuts</h2>
+		<ul>
+			<li>Item1...............$1.00</li>
+			<li>Item2...............$1.00</li>
+			<li>Item3...............$1.00</li>
+			<li>Item4...............$1.00</li>
+			<li>Item5...............$1.00</li>
+			<li>Item6...............$1.00</li>
+			<li>Item7...............$1.00</li>
+		</ul>	
+	</div>
+
+	<hr>
+
+	<div class="croissant-menu">
+		<img class="right-img" src="img/croissant.png">
+
+			<h2>Croissaint & Pastries</h2>
 			<ul>
-				<li>Item1........$1.00</li>
-				<li>Item2........$1.00</li>
-				<li>Item3........$1.00</li>
-				<li>Item4........$1.00</li>
-				<li>Item5........$1.00</li>
-			</ul>	
-		</div>
+				<li>Item1...............$1.00</li>
+				<li>Item2...............$1.00</li>
+				<li>Item3...............$1.00</li>
+				<li>Item4...............$1.00</li>
+				<li>Item5...............$1.00</li>
+				<li>Item6...............$1.00</li>
+				<li>Item7...............$1.00</li>
+			</ul>
 	</div>
 
-	<div>
-		
-	</div>
+	<hr>
 
-	<div>
-		
+	<div class="drinks-menu">
+		<img class="left-img coffee" src="img/coffee.png">
+
+		<h2>Coffee & Drinks</h2>
+		<ul>
+			<li>Item1...............$1.00</li>
+			<li>Item2...............$1.00</li>
+			<li>Item3...............$1.00</li>
+			<li>Item4...............$1.00</li>
+			<li>Item5...............$1.00</li>
+			<li>Item6...............$1.00</li>
+			<li>Item7...............$1.00</li>
+		</ul>
 	</div>
 	
 </div>
@@ -60,12 +88,60 @@
 
 <!-- About page -->
 
-<div id="page3">
+<div id="about-pg">
+
+<a id="about" class="smooth"></a>
+
+<img src="img/donutShop.png"> <!-- image by https://dribbble.com/catalystvibes -->
+
+<div class="about">
+	<p>We are a local donut shop who loves making fresh donuts daily for your donut cravings! Feel free to visit us at anytime when you want some fresh baked donuts, we are open 24/7!</p>
+</div>
+
+<div class="info">
+	<p class="adress"><strong>Adress:</strong></p>
+	<p>2031 S Hacienda Blvd, <br> 
+	Hacienda Heights, CA 91745
+	</p>
+
+	<p><strong>Phone Number:</strong></p>
+	<p>(626)336-1880</p>
+
+	<p><strong>Store Hours:</strong></p>
+	<p>Everyday - open 24 hrs</p>
+
+</div>
+
+<footer>
+<p>Created by <strong><a  target="_blank" href="https://github.com/cwu023">Jimmy Wu</a></strong> - 2018</p>
+</footer>
 	
 </div>
 
-<!-- Smooth scrolling -->
+<!-- Top Button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<!-- Top Button Function -->
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!-- Smooth scrolling -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
 <script>
